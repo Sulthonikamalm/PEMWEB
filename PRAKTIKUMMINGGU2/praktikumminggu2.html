@@ -1,13 +1,224 @@
-
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modul HTML Dasar — Biografi Albert Einstein</title>
 </head>
 <body>
-    
+
+  <header>
+    <h1>Manyungan Pacung</h1>
+    <nav>
+      <a href="#ringkasan">Ringkasan</a> |
+      <a href="#heading">Heading H1–H6</a> |
+      <a href="#tautan">Tautan</a> |
+      <a href="#media">Media</a> |
+      <a href="#tabel">Tabel</a> |
+      <a href="#form">Form</a>
+    </nav>
+    <p>
+      Halaman ini dibuat untuk memenuhi <b>Modul 1: HTML Dasar</b> dengan elemen semantik,
+      heading, tautan, tabel, media, dan form input.
+    </p>
+  </header>
+
+  <main>
+    <article id="ringkasan">
+      <h2>Biografi Albert Einstein</h2>
+
+      <section aria-labelledby="foto">
+        <h3 id="foto">Foto Biografi</h3>
+        <figure>
+          <img
+            src="https://cdn.pixabay.com/photo/2024/04/08/18/23/ai-generated-8684145_1280.jpg"
+            alt="Ilustrasi Albert Einstein (AI-generated)"
+            width="300">
+          <figcaption>Ilustrasi potret Einstein.</figcaption>
+        </figure>
+      </section>
+
+      <section aria-labelledby="riwayat">
+        <h3 id="riwayat">Riwayat Hidup</h3>
+        <p>
+          <b>Albert Einstein</b> lahir pada 14 Maret 1879 di Ulm, Kerajaan Württemberg, Jerman.
+          Ia menaruh minat besar pada fenomena alam sejak kecil. Saat remaja, ia pindah ke Swiss
+          dan belajar di Politeknik Zürich, mendalami matematika dan fisika.
+        </p>
+        <p>
+          Setelah lulus, ia bekerja di kantor paten di Bern. Pada 1905, “tahun ajaib”
+          (<i>Annus Mirabilis</i>), ia menerbitkan empat makalah monumental termasuk
+          teori relativitas khusus.
+        </p>
+        <p>
+          Pada 1915 ia menyempurnakan <i>Teori Relativitas Umum</i>. Pengamatan gerhana matahari
+          1919 mengonfirmasi prediksinya, menjadikannya ilmuwan yang mendunia.
+        </p>
+      </section>
+
+      <section aria-labelledby="nobel">
+        <h3 id="nobel">Pencapaian dan Nobel</h3>
+        <p>
+          Nobel Fisika 1921 dianugerahkan untuk penjelasan <i>efek fotolistrik</i>,
+          dasar lahirnya teknologi sel surya modern.
+        </p>
+      </section>
+
+      <section aria-labelledby="pengasingan">
+        <h3 id="pengasingan">Kehidupan Pribadi dan Pengasingan</h3>
+        <p>
+          Tahun 1933 Einstein meninggalkan Jerman karena rezim Nazi dan menetap di AS,
+          bekerja di Institute for Advanced Study, Princeton. Ia dikenal vokal
+          soal perdamaian dan isu kemanusiaan.
+        </p>
+      </section>
+
+      <section aria-labelledby="warisan">
+        <h3 id="warisan">Warisan Intelektual</h3>
+        <p>
+          Einstein wafat pada 18 April 1955 di Princeton. Warisannya mencakup
+          teori ilmiah dan pandangan filosofis tentang sains dan kemanusiaan—
+          namanya identik dengan kejeniusaan dan inovasi.
+        </p>
+      </section>
+    </article>
+
+    <section id="heading" aria-labelledby="h-demo">
+      <h2 id="h-demo">Demo Heading Day 1 belajar</h2>
+      <h1>Day 1 belajar — H1</h1>
+      <h2>Day 1 belajar — H2</h2>
+      <h3>Day 1 belajar — H3</h3>
+      <h4>Day 1 belajar — H4</h4>
+      <h5>Day 1 belajar — H5</h5>
+      <h6>Day 1 belajar — H6</h6>
+    </section>
+
+    <section id="tautan" aria-labelledby="link">
+      <h2 id="link">Tautan</h2>
+      <p>
+        Kunjungi YouTube: 
+        <a href="https://www.youtube.com" target="_blank" rel="noopener">https://www.youtube.com</a>
+      </p>
+      <p>
+        Tautan video contoh (shorts, dibuka di tab baru): 
+        <a href="https://www.youtube.com/shorts/OP3WCV10Fnc" target="_blank" rel="noopener">
+          https://www.youtube.com/shorts/OP3WCV10Fnc
+        </a>
+      </p>
+    </section>
+
+    <section id="media" aria-labelledby="med">
+      <h2 id="med">Media</h2>
+
+      <h3>Embedded Video (YouTube)</h3>
+      <iframe
+        width="400" height="712"
+        src="https://www.youtube.com/embed/OP3WCV10Fnc"
+        title="Video Biografi (contoh)"
+        frameborder="0"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+
+      <h3>Video Tag (MP4 contoh)</h3>
+      <video
+        src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4"
+        width="480"
+        controls
+        muted
+        loop>
+        Browser Anda tidak mendukung elemen <code>video</code>.
+      </video>
+
+      <h3>Audio Tag (MP3 contoh)</h3>
+      <audio
+        src="https://interactive-examples.mdn.mozilla.net/media/cc0-audio/t-rex-roar.mp3"
+        controls>
+        Browser Anda tidak mendukung elemen <code>audio</code>.
+      </audio>
+    </section>
+
+    <section id="tabel" aria-labelledby="tb">
+      <h2 id="tb">Tabel</h2>
+
+      <h3>Tabel Biografi Singkat (Sederhana)</h3>
+      <table>
+        <tr>
+          <th>Nama</th>
+          <th>Tanggal Lahir</th>
+          <th>Tempat Lahir</th>
+          <th>Profesi</th>
+          <th>Tanggal Wafat</th>
+        </tr>
+        <tr>
+          <td>Albert Einstein</td>
+          <td>14 Maret 1879</td>
+          <td>Ulm, Jerman</td>
+          <td>Fisika Teoretis</td>
+          <td>18 April 1955</td>
+        </tr>
+      </table>
+
+      <h3>Tabel Pendidikan & Karir (rowspan/colspan)</h3>
+      <table>
+        <tr>
+          <th rowspan="2">Nama Lengkap</th>
+          <th colspan="3">Gelar Pendidikan</th>
+          <th rowspan="2">Jabatan Karir</th>
+        </tr>
+        <tr>
+          <th>Sarjana</th>
+          <th>Magister</th>
+          <th>Doktor</th>
+        </tr>
+        <tr>
+          <td>Albert Einstein</td>
+          <td>—</td>
+          <td>—</td>
+          <td>Ph.D. (1905)</td>
+          <td>Profesor / Peneliti</td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="form" aria-labelledby="fm">
+      <h2 id="fm">Form Input</h2>
+      <form>
+        <fieldset>
+          <legend>Data Singkat</legend>
+
+          <label for="nama">Nama:</label><br>
+          <input type="text" id="nama" name="nama" placeholder="Nama lengkap"><br><br>
+
+          <label for="tgl">Tanggal Lahir:</label><br>
+          <input type="date" id="tgl" name="tgl"><br><br>
+
+          <span>Jenis Kelamin:</span><br>
+          <input type="radio" id="lk" name="jk" value="Laki-laki">
+          <label for="lk">Laki-laki</label><br>
+          <input type="radio" id="pr" name="jk" value="Perempuan">
+          <label for="pr">Perempuan</label><br><br>
+
+          <span>Minat:</span><br>
+          <input type="checkbox" id="fisika" name="minat" value="Fisika">
+          <label for="fisika">Fisika</label><br>
+          <input type="checkbox" id="matematika" name="minat" value="Matematika">
+          <label for="matematika">Matematika</label><br><br>
+
+          <button type="submit">Kirim</button>
+          <input type="button" value="Reset (contoh tombol)">
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; 2025 — Halaman latihan HTML dasar (tanpa CSS).  
+      Gunakan elemen semantik seperti <code>header</code>, <code>nav</code>, <code>main</code>,
+      <code>section</code>, <code>article</code>, dan <code>footer</code> untuk struktur yang rapi.
+    </p>
+  </footer>
+
 </body>
 </html>
